@@ -1,0 +1,158 @@
+
+.about-page {
+  background-color: #fffaf7;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+
+.about-hero {
+  text-align: center;
+  padding: 75px 7%;
+  background-color: #fff3ec;
+}
+
+.about-hero h1 {
+  font-size: 45px;
+  color: #202020;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 span {
+  color: #ff633e;
+}
+
+.about-hero p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.about-hero button {
+  background-color: #ff633e;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.about-hero button:hover {
+  background-color: #e85330;
+}
+
+/* Our Story */
+
+.about-story {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 7%;
+}
+
+.story-image {
+  flex: 1;
+}
+
+.story-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-text h2,
+.about-mission h2,
+.about-why h2 {
+  font-size: 30px;
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+.story-text p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Mission */
+
+.about-mission {
+  text-align: center;
+  background-color: #fff3ec;
+  padding: 60px 15%;
+}
+
+.about-mission p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Why Choose Us */
+
+.about-why {
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.why-card {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.why-card span {
+  font-size: 40px;
+}
+
+.why-card h3 {
+  margin: 15px 0;
+  color: #202020;
+}
+
+.why-card p {
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .about-story {
+    flex-direction: column;
+    padding: 45px 5%;
+  }
+
+  .story-image img {
+    height: 250px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+  }
+
+  .about-mission {
+    padding: 45px 7%;
+  }
+
+}
