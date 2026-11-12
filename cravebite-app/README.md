@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+CraveBite 🍔
+Your Cravings, Delivered.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CraveBite is a responsive food-ordering website built with React.js for the CSCI426 Advanced Web Programming course (Phase 1). It lets users explore restaurants, search and filter options, view restaurant-specific menus, and manage a shopping cart through a simple, modern interface.
+Live Project
+- Website: https://cravebite-app.vercel.app/
+- GitHub: https://github.com/MelissaHalabi/CraveBite
+Features
+- Home: Welcome section, restaurant search, and food-category shortcuts.
+- Restaurants: Browse eight sample restaurants, search by name or cuisine, and filter by category.
+- Menus: View menu items, prices, and images for each restaurant; add items to the cart.
+- Cart: View selected items, quantities, and total cost; remove items and display a checkout confirmation.
+- About Us: Learn about the CraveBite concept and purpose.
+- Contact Us: Submit a frontend contact form and see a confirmation message.
+- Responsive layout: Navigation, cards, and footer designed for desktop and smaller screens.
+Technologies
+- React.js (functional components and hooks)
+- JavaScript, HTML, and CSS
+- React Router DOM for page navigation
+- Git and GitHub for version control
+- Vercel for deployment
+React Concepts Used
+The project uses useState to manage searches, filters, forms, and cart items; useNavigate, useParams, and useSearchParams for navigation and route data; and JavaScript array methods such as .map(), .filter(), .find(), and .reduce() to display and manage data.
+Run Locally
+1. Clone the repository:git clone https://github.com/MelissaHalabi/CraveBite.git
+2. Open the React app directory:cd CraveBite/cravebite-app
+3. Install dependencies:npm install
+4. Start the development server:npm start
+5. Visit http://localhost:3000.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Phase 1 Scope
+CraveBite is a frontend demonstration using sample restaurant and menu data. The checkout button displays a confirmation rather than processing payment; the contact form does not send email; and cart contents are stored in React state and may reset on refresh. Backend services, authentication, and persistent orders are not part of this implementation.
