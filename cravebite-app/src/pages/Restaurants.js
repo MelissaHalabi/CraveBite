@@ -6,15 +6,15 @@ import "./Restaurants.css";
 function Restaurants() {
 
   const navigate = useNavigate();
-
   const [searchParams] = useSearchParams();
 
+  // Get search and category from Home page
   const homeSearch = searchParams.get("search") || "";
+  const homeCategory = searchParams.get("category") || "All";
 
   const [search, setSearch] = useState(homeSearch);
   const [submittedSearch, setSubmittedSearch] = useState(homeSearch);
-
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState(homeCategory);
 
   const categories = [
     "All",
@@ -87,7 +87,7 @@ function Restaurants() {
     },
     {
       id: 8,
-      name: "Crunchyz",
+      name: "Classic Burger",
       category: "Burgers",
       rating: 4.6,
       deliveryTime: "20-30 min",
@@ -97,31 +97,24 @@ function Restaurants() {
 
   // Search Function
   function handleSearch(event) {
-
     event.preventDefault();
 
     setSubmittedSearch(search.trim());
     setSelectedCategory("All");
-
   }
 
   // Category Function
   function handleCategory(category) {
-
     setSelectedCategory(category);
-
     setSearch("");
     setSubmittedSearch("");
-
   }
 
   // Clear Filters
   function clearFilters() {
-
     setSearch("");
     setSubmittedSearch("");
     setSelectedCategory("All");
-
   }
 
   // Filter Restaurants
@@ -136,7 +129,6 @@ function Restaurants() {
       restaurant.category === selectedCategory;
 
     return matchesSearch && matchesCategory;
-
   });
 
   return (
@@ -223,7 +215,6 @@ function Restaurants() {
                 <div className="restaurant-meta">
 
                   <span>⭐ {restaurant.rating}</span>
-
                   <span>🕒 {restaurant.deliveryTime}</span>
 
                 </div>
